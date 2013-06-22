@@ -1,0 +1,150 @@
+% 
+\documentclass[aspectratio=169]{beamer}
+\usepackage[english,russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{pgfpages}
+\usepackage{ulem}
+\usepackage{float}
+\usepackage{amsmath}
+
+
+
+
+
+
+
+
+
+
+% /usr/share/texmf-site/tex/latex/beamer/base/themes/theme
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{author}{fg=white}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{frametitle}{fg=black}
+\setbeamercolor{item}{fg=red}
+\setbeamercolor{block title}{fg=red}
+\setbeamercolor{section in toc}{fg=red}
+\setbeamercolor{footline}{fg=white}
+\setbeamercolor{title in head/foot}{fg=white,bg=black}
+
+
+
+
+
+
+
+
+
+
+%
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{headline}{
+    \includegraphics[height=1mm, width=\paperwidth]{wg-headline.png}
+}
+
+\setbeamertemplate{footline}{
+    \begin{beamercolorbox}[ht=1.2em]{title in head/foot}
+        {\footnotesize \hspace{1em}\inserttitle, \insertshortauthor}
+    \end{beamercolorbox}
+}
+
+
+
+
+
+
+
+%
+\begin{document}
+
+\title{Корпоративная презентация в Beamer}
+\author{Максим Мельников (max\_posedon)}
+\date{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% 
+{
+\title{
+    \includegraphics[width=0.4\textwidth]{wg-logo.png}\\
+    {\Huge КОРПОРАТИВНАЯ ПРЕЗЕНТАЦИЯ\\В BEAMER}
+}
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{wg-end.jpg}}
+\begin{frame}[plain]{}
+    \titlepage
+\end{frame}
+}
+
+
+
+
+
+
+
+
+\begin{frame}{АБСТРАКТНЫЙ СЛАЙД}
+    \begin{itemize}
+        \item абстрактная мысль I
+        \item абстрактная мысль II
+    \end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% 
+{
+\setbeamertemplate{footline}{}
+
+\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{normal text}{fg=white}
+\setbeamercolor{block title}{fg=white}
+\setbeamercolor{block body}{fg=red}
+
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{wg-end.jpg}}
+
+\begin{frame}{СПАСИБО ЗА ВНИМАНИЕ. ВОПРОСЫ}
+    \begin{block}{Максим Мельников}
+    \par \url{mailto:maxposedon@gmail.com}
+    \par \url{http://www.tex.ac.uk/ctan/macros/latex/contrib/beamer/doc/beameruserguide.pdf}
+    \par \url{https://github.com/max-posedon/wg-beamer-theme}
+    \par \url{https://plus.google.com/114669104565190507739/}
+    \par \url{https://twitter.com/max\_posedon}
+    \par \url{https://github.com/max-posedon/talk-corp-beamer}
+    \par \url{http://www.slideshare.net/max\_posedon/beamer-23321883}
+    \end{block}
+\end{frame}
+}
+
+\end{document}
+
